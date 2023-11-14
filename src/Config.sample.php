@@ -5,32 +5,32 @@
   class Config {
 
     /* 
-    Bitcoin Node Manager (BNM) password for login. You should additionally change the name of
-    BNM folder to something unique, if accessible via the web. 
+    RedBlock Node Manager (REDB) password for login. You should additionally change the name of
+    REDB folder to something unique, if accessible via the web. 
     Leave empty to disable it (only do this on a local setup that can't be reached from the outside).
      */
     const PASSWORD = "LOGIN-PASSWORD";
     /* 
-    IP that can access BNM:
-      "": any IP can access BNM
-      "localhost": only localhost (IPv4/v6) can access BNM)
-      "84.12.32.297": localhost and the specific IP (e.g. 84.12.32.297) can access BNM
+    IP that can access REDB:
+      "": any IP can access REDB
+      "localhost": only localhost (IPv4/v6) can access REDB)
+      "84.12.32.297": localhost and the specific IP (e.g. 84.12.32.297) can access REDB
     */
     const ACCESS_IP = "";
 
     /*
-    IP of the Bitcoin Core RPC Server, usually localhost. Be careful with remote servers. The connection is not encrypted by default.
+    IP of the RedBlock Core RPC Server, usually localhost. Be careful with remote servers. The connection is not encrypted by default.
     DOCKER:
       -> Windows/Mac: host.docker.internal
       -> Linux: 172.17.0.1 (Don't forget to open the port since docker uses by default a different network interface: 
-        'sudo ufw allow in on docker0 from 172.17.0.0/16 to any port 8332')
+        'sudo ufw allow in on docker0 from 172.17.0.0/16 to any port 8211')
     */
     const RPC_IP = "127.0.0.1";
-    // RPC port, usually 8332 if not changed in bitcoin.conf
-    const RPC_PORT = "8332";
-    // RPC username / rpcauth specified in bitcoin.conf
+    // RPC port, usually 8211 if not changed in redblock.conf
+    const RPC_PORT = "8211";
+    // RPC username / rpcauth specified in redblock.conf
     const RPC_USER = "USERNAME";
-    // RPC password / rpcauth specified in bitcoin.conf
+    // RPC password / rpcauth specified in redblock.conf
     const RPC_PASSWORD = "PASSWORD";
 
     /*

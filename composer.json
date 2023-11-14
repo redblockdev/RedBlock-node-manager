@@ -1,8 +1,8 @@
 {
-  "name": "mirobit/bitcoin-node-manager",
-  "description": "Lightweight dashboard and control system for bitcoin nodes",
+  "name": "RedBlock-node-manager",
+  "description": "Lightweight dashboard and control system for redblock nodes",
   "keywords": [
-    "bitcoin",
+    "redblock",
     "dashboard",
     "manager"
   ],
@@ -14,7 +14,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/Mirobit/bitcoin-node-manager/issues"
+    "issues": "https://github.com/redblockdev/RedBlock-node-manager/issues"
   },
   "type": "project",
   "require": {

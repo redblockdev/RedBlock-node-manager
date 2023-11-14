@@ -85,7 +85,7 @@ function createBanListContent(){
 
 	// List of all banned peers
 	$content['banList'] = $banlist;
-	
+
 
 	return $content;
 }
@@ -221,7 +221,7 @@ function createMempoolContent(){
 
 function createWalletContent(){
 	global $bitcoind, $error;
-	
+
 	try{
 		$unspents = $bitcoind->listunspent();
 		$walletInfo = $bitcoind->getwalletinfo();
@@ -245,7 +245,7 @@ function createWalletContent(){
 	$content['wallet']["unconfirmed_balance"] = checkInt($balances["mine"]["untrusted_pending"]);	
 	$content['wallet']["immature_balance"] = checkInt($balances["mine"]["immature"]);	
 	$content['wallet']["txcount"] = checkInt($walletInfo["txcount"]);	
-	
+
 	$i = 0;
 
 	foreach($unspents as $unspent){
@@ -261,7 +261,7 @@ function createWalletContent(){
 
 		$i++;
 	}
-	
+
 	return $content;
 }
 ?>
